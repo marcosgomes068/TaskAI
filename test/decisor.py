@@ -1,9 +1,18 @@
 from taskai import tki 
+from taskai import tools
+import json
+import os
 
-result = tki.run_agent(
-    name="Orion",
-    role="Pesquisador de IA",
-    task="Me diga as tendências de inteligência artificial para 2025",
-    save="orion.json"
+# Carrega as ferramentas
+toolsdir = json.load(open("ferramentas.json"))
+tools_path = [os.path.join("mytools", f) for f in os.listdir("mytools") if f.endswith(".py")]
+tools = tools  # ou tools = None, se não usar diretamente
+
+user_input = "Quero abrir o app do discord"
+
+# exemplo de uso do decisor
+result = tki.decisor(
+    user_input,
+    toolsdir,
+    tools_path  # Passe os caminhos aqui
 )
-print(result)

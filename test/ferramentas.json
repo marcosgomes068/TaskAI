@@ -1,0 +1,7 @@
+{
+    "abrir_apps": {
+        "descricao": "Abre um aplicativo no sistema operacional.",
+        "quando usar":"sempre que o usuario queira abrir apps na maquina, usando win+s>nome do app",
+        "caso seja chamada retorne": "taskai:openapp"
+    }
+}
