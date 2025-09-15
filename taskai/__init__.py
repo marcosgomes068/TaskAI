@@ -1,4 +1,3 @@
-from taskai import TaskAI
+from .tki import tki
 
-agent = [
-]
+__all__ = ['tki']

@@ -1,0 +1,22 @@
+{
+    "abrir_apps": {
+        "descricao": "Pesquisa universal do Windows (Win+S) - abre apps, pesquisa web, encontra arquivos, configurações, etc.",
+        "quando usar": "sempre que o usuario quiser abrir apps, pesquisar algo, encontrar arquivos, acessar configurações, buscar noticias, clima, etc",
+        "caso seja chamada retorne": "abrir_apps('termo_de_busca')"
+    },
+    "abrir_pastas": {
+        "descricao": "Abre uma pasta específica no explorador de arquivos.",
+        "quando usar": "sempre que o usuario queira abrir pastas ou diretórios específicos",
+        "caso seja chamada retorne": "abrir_pastas('caminho_da_pasta')"
+    },
+    "pesquisar_web": {
+        "descricao": "Realiza pesquisa na web usando o navegador padrão.",
+        "quando usar": "quando o usuario quer pesquisar algo na internet ou abrir sites",
+        "caso seja chamada retorne": "pesquisar_web('termo_de_busca')"
+    },
+    "criar_arquivo": {
+        "descricao": "Cria um novo arquivo de texto com conteúdo especificado.",
+        "quando usar": "quando o usuario quer criar novos arquivos ou salvar textos",
+        "caso seja chamada retorne": "criar_arquivo('nome_arquivo', 'conteudo')"
+    }
+}
